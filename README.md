@@ -41,6 +41,17 @@
       </a>
       <br><br>
       <sub><strong>Available Editions</strong>:<br>Paperback (7"×10") • Hardcover Case-Laminate • Kindle eBook</sub>
+      <br><br>
+      <strong>📦 Get Your Copy</strong><br>
+      <a href="https://www.amazon.com/dp/KINDLE_ASIN_HERE" target="_blank">
+        <img src="https://img.shields.io/badge/Kindle_eBook-Buy_Now-FF9900?style=flat-square&logo=amazon&logoColor=white" alt="Buy Kindle eBook">
+      </a><br>
+      <a href="https://www.amazon.com/dp/PAPERBACK_ASIN_HERE" target="_blank">
+        <img src="https://img.shields.io/badge/Paperback-Buy_Now-FF9900?style=flat-square&logo=amazon&logoColor=white" alt="Buy Paperback">
+      </a><br>
+      <a href="https://www.amazon.com/dp/HARDCOVER_ASIN_HERE" target="_blank">
+        <img src="https://img.shields.io/badge/Hardcover-Buy_Now-FF9900?style=flat-square&logo=amazon&logoColor=white" alt="Buy Hardcover">
+      </a>
     </td>
     <td width="64%" valign="top">
       <h3>The Definitive Systems Engineering Manual for Autonomous AI Agents</h3>
@@ -253,7 +264,7 @@ If you reference this work, utilize the companion code, or cite its architectura
 ## 🏢 About Digbijoy Labs & the Author
 
 - **Jay Thorne** is a systems architect and autonomous systems engineer specializing in cognitive execution runtimes, context engineering, and the production infrastructure required to run agentic AI at enterprise scale.
-- **Digbijoy Labs Publications** is an advanced AI systems research lab and engineering publishing imprint dedicated to publishing definitive, non-fiction engineering manuals and reference architectures.
+- **Digbijoy Labs Publications** is an independent knowledge studio and publishing imprint spanning technical engineering, artificial intelligence, philosophy, humanities, and the social dimensions of emerging technology. Beyond print books, Digbijoy Labs produces educational video series, research commentary, and long-form learning resources — all built around the conviction that rigorous ideas, clearly communicated, drive meaningful progress.
 - **Official Portal**: [https://digbijoylabs.com](https://digbijoylabs.com)
 - **Errata Submissions**: Submit discrepancies directly via [GitHub Issues](https://github.com/digbijoy-labs/beyond-the-prompt/issues) or consult [ERRATA.md](ERRATA.md).
 
