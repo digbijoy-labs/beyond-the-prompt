@@ -263,10 +263,33 @@ If you reference this work, utilize the companion code, or cite its architectura
 
 ## 🏢 About Digbijoy Labs & the Author
 
-- **Jay Thorne** is a systems architect and autonomous systems engineer specializing in cognitive execution runtimes, context engineering, and the production infrastructure required to run agentic AI at enterprise scale.
-- **Digbijoy Labs Publications** is an independent knowledge studio and publishing imprint spanning technical engineering, artificial intelligence, philosophy, humanities, and the social dimensions of emerging technology. Beyond print books, Digbijoy Labs produces educational video series, research commentary, and long-form learning resources — all built around the conviction that rigorous ideas, clearly communicated, drive meaningful progress.
+**Digbijoy Labs** is an autonomous research studio and intellectual media lab. Across books and two flagship YouTube channels, it works two frontiers of intelligence — the technical and the human — with forensic depth and visual beauty, unhurried.
+
+### 📺 Watch
+
+| Channel | Focus |
+|---------|-------|
+| **The Neural Blueprint** | Forensic deep-dives on AI, computation, and deep technology |
+| **The Mind Blueprint** | Consciousness, psychology, existential philosophy, self, mind, and life |
+
+### 📚 Read — Digbijoy Labs Publications
+
+**Jay Thorne** *(pen name)* — practitioner-grade books spanning the same ground: AI, computation and the AI-native stack; consciousness, psychology and the examined life.
+
+Current catalogue:
+
+- *Beyond the Prompt* — The Architecture of Autonomous Systems
+- *The Legacy Bridge*
+- *The Connected Machine*
+- *The Cognitive Economy*
+
+---
+
 - **Official Portal**: [https://digbijoylabs.com](https://digbijoylabs.com)
 - **Errata Submissions**: Submit discrepancies directly via [GitHub Issues](https://github.com/digbijoy-labs/beyond-the-prompt/issues) or consult [ERRATA.md](ERRATA.md).
+
+> *No hype. No surface-level tutorials. Faceless by design.*
+
 
 ---
 
