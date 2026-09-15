@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/digbijoylabs/beyond-the-prompt/actions/workflows/ci.yml"><img src="https://github.com/digbijoylabs/beyond-the-prompt/actions/workflows/ci.yml/badge.svg" alt="CI Verification"></a>
+  <a href="https://github.com/digbijoy-labs/beyond-the-prompt/actions/workflows/ci.yml"><img src="https://github.com/digbijoy-labs/beyond-the-prompt/actions/workflows/ci.yml/badge.svg" alt="CI Verification"></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.12+-blue.svg" alt="Python 3.12+"></a>
   <a href="https://pydantic.dev"><img src="https://img.shields.io/badge/pydantic-v2.8+-e92063.svg" alt="Pydantic v2"></a>
   <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/protocol-MCP_2026--07--28-orange.svg" alt="Protocol: MCP"></a>
@@ -190,7 +190,7 @@ beyond-the-prompt/
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/digbijoylabs/beyond-the-prompt.git
+git clone https://github.com/digbijoy-labs/beyond-the-prompt.git
 cd beyond-the-prompt
 python -m pip install --upgrade pip
 pip install -r requirements.txt
@@ -244,7 +244,7 @@ If you reference this work, utilize the companion code, or cite its architectura
   year      = {2026},
   pages     = {446},
   isbn      = {Pending / Official Release},
-  url       = {https://github.com/digbijoylabs/beyond-the-prompt}
+  url       = {https://github.com/digbijoy-labs/beyond-the-prompt}
 }
 ```
 
@@ -255,7 +255,7 @@ If you reference this work, utilize the companion code, or cite its architectura
 - **Jay Thorne** is a systems architect and autonomous systems engineer specializing in cognitive execution runtimes, context engineering, and the production infrastructure required to run agentic AI at enterprise scale.
 - **Digbijoy Labs Publications** is an advanced AI systems research lab and engineering publishing imprint dedicated to publishing definitive, non-fiction engineering manuals and reference architectures.
 - **Official Portal**: [https://digbijoylabs.com](https://digbijoylabs.com)
-- **Errata Submissions**: Submit discrepancies directly via [GitHub Issues](https://github.com/digbijoylabs/beyond-the-prompt/issues) or consult [ERRATA.md](ERRATA.md).
+- **Errata Submissions**: Submit discrepancies directly via [GitHub Issues](https://github.com/digbijoy-labs/beyond-the-prompt/issues) or consult [ERRATA.md](ERRATA.md).
 
 ---
 
