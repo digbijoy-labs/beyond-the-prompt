@@ -279,9 +279,8 @@ If you reference this work, utilize the companion code, or cite its architectura
 Current catalogue:
 
 - *Beyond the Prompt* — The Architecture of Autonomous Systems
-- *The Legacy Bridge*
-- *The Connected Machine*
-- *The Cognitive Economy*
+- *The Legacy Bridge* — *(Coming Soon)*
+- *The Connected Machine* — *(Coming Soon)*
 
 ---
 
