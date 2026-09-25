@@ -43,13 +43,13 @@
       <sub><strong>Available Editions</strong>:<br>Paperback (7"×10") • Hardcover Case-Laminate • Kindle eBook</sub>
       <br><br>
       <strong>📦 Get Your Copy</strong><br>
-      <a href="https://www.amazon.com/dp/KINDLE_ASIN_HERE" target="_blank">
+      <a href="https://www.amazon.com/dp/B0HJZ1BY9P" target="_blank">
         <img src="https://img.shields.io/badge/Kindle_eBook-Buy_Now-FF9900?style=flat-square&logo=amazon&logoColor=white" alt="Buy Kindle eBook">
       </a><br>
-      <a href="https://www.amazon.com/dp/PAPERBACK_ASIN_HERE" target="_blank">
+      <a href="https://www.amazon.com/dp/B0HJZ9TGP5" target="_blank">
         <img src="https://img.shields.io/badge/Paperback-Buy_Now-FF9900?style=flat-square&logo=amazon&logoColor=white" alt="Buy Paperback">
       </a><br>
-      <a href="https://www.amazon.com/dp/HARDCOVER_ASIN_HERE" target="_blank">
+      <a href="https://www.amazon.com/dp/B0HK1CNB5Y" target="_blank">
         <img src="https://img.shields.io/badge/Hardcover-Buy_Now-FF9900?style=flat-square&logo=amazon&logoColor=white" alt="Buy Hardcover">
       </a>
     </td>
@@ -62,7 +62,7 @@
         <strong><em>Beyond the Prompt</em></strong> establishes a rigorous distributed-systems foundation for agentic engineering. Rather than treating foundation models as conversational oracles, this volume treats the large language model as an <strong>untrusted, probabilistic CPU</strong> operating inside a hardened, deterministic runtime system governed by an engineered <strong>AI Harness</strong>.
       </p>
       <ul>
-        <li><strong>446 Pages</strong> of rigorous, zero-fluff distributed systems architecture.</li>
+        <li><strong>432 Pages</strong> of rigorous, zero-fluff distributed systems architecture.</li>
         <li><strong>24 In-Depth Chapters</strong> organized into 6 formal architectural parts.</li>
         <li><strong>26 Monochromatic O'Reilly-Style Schematics</strong> illustrating isolation boundaries and topologies.</li>
         <li><strong>178 Production Reference Blueprints</strong> in modern Python 3.12+ and Pydantic v2.</li>
@@ -170,6 +170,7 @@ beyond-the-prompt/
 │   ├── protocols/a2a_messaging.py       # Agent-to-Agent (A2A) Message Envelope (Ch 17)
 │   ├── multiagent/subagent_pool.py      # Ephemeral Subagent Worker Isolation (Ch 18)
 │   ├── hitl/authorization_gate.py       # Two-Phase Policy Decision Point (Ch 19)
+│   ├── hitl/escrow_gate.py              # Cryptographic Escrow & Anti-Tamper Gate (Ch 19)
 │   ├── spec/executable_spec.py          # Spec-Driven Executable Prompt Engine (Ch 20)
 │   ├── security/zero_trust_guard.py     # Prompt Injection & Canary Filter (Ch 21)
 │   ├── evals/eval_runner.py             # Deterministic Trajectory Benchmarks (Ch 22)
@@ -182,7 +183,7 @@ beyond-the-prompt/
 │   ├── part4_protocols_runtime/         # Chapters 13–16 Walkthroughs
 │   ├── part5_multi_agent_swarms/        # Chapters 17–20 Walkthroughs
 │   └── part6_eval_security/             # Chapters 21–24 Walkthroughs
-├── tests/                               # Comprehensive automated test suite (10/10 passing)
+├── tests/                               # Comprehensive automated test suite (14/14 passing)
 ├── .github/workflows/ci.yml             # GitHub Actions CI for Python 3.12+
 ├── ERRATA.md                            # Living errata & architecture changelog
 ├── LICENSE                              # MIT License (Digbijoy Labs)

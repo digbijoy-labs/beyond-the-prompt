@@ -1,11 +1,13 @@
 """
 Flow Engineering & Deterministic Statechart DAG (Chapter 9)
-Replaces brittle prompt loops with explicit statechart execution graphs.
+Replaces brittle prompt loops with explicit statechart execution graphs
+and monotonic step bounding to prevent infinite recovery cycles.
 """
 
 from __future__ import annotations
 
-from typing import Callable
+from dataclasses import dataclass
+from typing import Any, Callable
 from pydantic import BaseModel
 
 
@@ -16,11 +18,14 @@ class StatechartNode(BaseModel):
 
 class StatechartDAG:
     """
-    Directed cyclic/acyclic statechart engine with explicit transition guards.
+    Directed cyclic/acyclic statechart engine with explicit transition guards
+    and monotonic step bounding to prevent infinite recovery cycles.
     """
 
-    def __init__(self, initial_state: str):
+    def __init__(self, initial_state: str, max_steps: int = 25):
         self.current_state = initial_state
+        self.max_steps = max_steps
+        self.step_count = 0
         self.transitions: dict[str, dict[str, Callable[[dict], bool]]] = {}
         self.nodes: dict[str, StatechartNode] = {}
 
@@ -33,7 +38,16 @@ class StatechartDAG:
         self.transitions[src][dst] = guard
 
     def step(self, context: dict) -> str:
-        if self.nodes[self.current_state].is_terminal:
+        if self.nodes.get(self.current_state, StatechartNode(name=self.current_state)).is_terminal:
+            return self.current_state
+
+        self.step_count += 1
+        if self.step_count >= self.max_steps:
+            for name, node in self.nodes.items():
+                if node.is_terminal:
+                    self.current_state = name
+                    return self.current_state
+            self.current_state = "TERMINAL"
             return self.current_state
 
         available = self.transitions.get(self.current_state, {})
@@ -43,3 +57,51 @@ class StatechartDAG:
                 return self.current_state
 
         raise RuntimeError(f"State transition deadlock at state '{self.current_state}'")
+
+
+# ---------------------------------------------------------------------------
+# Chapter 9 Reference Implementation Kernel: StateChartEngine
+# ---------------------------------------------------------------------------
+
+class InvalidStateError(Exception):
+    pass
+
+
+@dataclass
+class MachineState:
+    current: str
+    step_count: int
+    context: dict[str, Any]
+
+
+class StateChartEngine:
+    """
+    Guarded statechart execution engine enforcing monotonic step increments
+    and global step ceilings to prevent unbounded recovery cycles.
+    """
+
+    def __init__(
+        self,
+        states: set[str],
+        transitions: dict[str, dict[str, Any]],
+        initial: str,
+        max_steps: int = 25,
+    ):
+        self.states = states
+        self.transitions = transitions
+        self.initial = initial
+        self.max_steps = max_steps
+
+    def step(self, state: MachineState) -> MachineState:
+        if state.current not in self.states:
+            raise InvalidStateError(f"Unknown: {state.current}")
+        state.step_count += 1
+        if state.step_count >= self.max_steps:
+            state.current = "TERMINAL"
+            return state
+        edges = self.transitions.get(state.current, {})
+        for tgt, guard in edges.items():
+            if guard(state.context):
+                state.current = tgt
+                return state
+        return state
