@@ -1,10 +1,6 @@
 <p align="center">
   <a href="https://digbijoylabs.com" target="_blank">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/images/digbijoy_labs_logo_dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="assets/images/digbijoy_labs_logo.png">
-      <img src="assets/images/digbijoy_labs_logo.png" alt="Digbijoy Labs Publications" width="280">
-    </picture>
+    <img src="assets/images/digbijoy_labs_logo.png" alt="Digbijoy Labs" width="280">
   </a>
 </p>
 
